@@ -4,11 +4,7 @@ import scraperwiki
 import lxml.html
 import re
 
-types = ['dvds/release-date/new-releases', 'movies/release-date/theaters',
-    'tv/release-date/new-series', 'albums/release-date/new-releases',
-    'games/release-date/new-releases/ps3', 'games/release-date/new-releases/xbox360', 'games/release-date/new-releases/pc',
-    'games/release-date/new-releases/ios', 'games/release-date/new-releases/wii', 'games/release-date/new-releases/psp',
-    'games/release-date/new-releases/ds', 'games/release-date/new-releases/3ds', 'games/release-date/new-releases/legacy',]
+types = ['albums/release-date/new-releases',]
 
 for type in types:
     url = "http://www.metacritic.com/browse/%s/date?view=detailed" % type
